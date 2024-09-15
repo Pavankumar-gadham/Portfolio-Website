@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <head>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav id="navbar">
+        <div>
+            <h2>Portfolio</h2>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section id="home">
+        <div>
+            <div>
+                <h4 style="font-size: 1.5rem;">Hi, I'm</h4>
+                <h1 style="font-size: 3rem;">Pavan Kumar  Gadham</h1>
+                <h3 style="font-size: 2rem;">Graduate Student</h3>
+                <a href="{% static 'pdf/PAVAN KUMAR GADHAM.pdf' %}" target="_blank">
+                    <button>Resume</button>
+                </a>
+                <a href="http://www.linkedin.com/in/pavan-gadham" target="_blank">
+                    <button>Let's Talk</button>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div id="mainImage">
+                <img src="{% static 'images/avatar.webp' %}" alt="Avatar">
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div>
+            <div>
+                <img src="{% static 'images/dog.webp' %}" alt="Dog Image">
+            </div>
+            <div>
+                
+                <p><i>Hello! I’m Pavan Kumar Gadham, a passionate and innovative Software Engineer with a Bachelor’s degree in Computer Science and Engineering from Sreyas Institute of Engineering and Technology, Hyderabad. My journey in technology has been driven by a deep curiosity and a commitment to leveraging cutting-edge tools and methodologies to solve real-world problems.
+                With expertise in Python, JavaScript, SQL, and various web technologies, I specialize in web development and data analysis. My technical skills are complemented by hands-on experience with frameworks like Django and Angular, as well as libraries such as Pandas and NumPy. I also have a basic understanding of machine learning, which I have applied in projects like heart disease diagnosis.</i></p>
+                
+            </div>
+        </div>
+    </section>
+   <!-- <hr style="height: -1pc" color="black"> -->
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h1>Technical Skills</h1>
+        <div class="skills-container">
+            <div class="skills-list">
+                <div class="skill">
+                    <p><i class="fa-brands fa-python"></i> Python</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="percentage">85%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-brands fa-python"></i></i> Django</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="percentage">80%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-brands fa-angular"></i>Angular</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="percentage">80%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-solid fa-database"></i></i> SQL</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="percentage">85%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-solid fa-database"></i> MySQL</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="percentage">85%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-solid fa-code"></i> HTML</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 90%;"></div>
+                    </div>
+                    <p class="percentage">90%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="percentage">85%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-brands fa-js"></i>JavaScript</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="percentage">80%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-solid fa-layer-group"></i>NumPy</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="percentage">85%</p>
+                </div>
+                <div class="skill">
+                    <p><i class="fa-solid fa-hashtag"></i>Pandas</p>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="percentage">85%</p>
+                </div>
+                
+            </div>
+            <div class="skills-image">
+                <img src="{% static 'images/skills.avif' %}" alt="Skills Image">
+            </div>
+        </div>
+    </section>
+    
+    
+   <!-- <hr style="height: -1pc" color="black"> -->
+
+    <!-- Projects section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div>
+            <div>
+                
+                <h1 class="hard">Name: Hardware Hub</h1>
+                <p><b>Description:</b> Hardware Hub is an e-commerce website that enables the user to purchase custom PC. A custom-built PC is a computer that's built and customized to meet specific consumer needs.</p>
+                <a href="https://github.com/Pavankumar-gadham/Hardware-Hub" target="_blank">GitHub</a>
+            </div>
+
+            <div>
+                <h1>Name: Heart Disease Prediction System</h1>
+                <p><b>Description:</b> The Heart Disease Prediction System leverages machine learning techniques to predict the likelihood of heart disease in individuals based on their health data.</p>
+                <a href="https://github.com/Pavankumar-gadham/Heart-disease-prediction" target="_blank">GitHub</a>
+            </div>
+
+            <div>
+                <h1>Name: E-commerce shopping website</h1>
+                <p><b>Description:</b> This E-Commerce shopping website was designed and developed to provide users with an intuitive and interactive online shopping experience.</p>
+                <a href="https://github.com/Pavankumar-gadham/E-commerce-shopping-website" target="_blank">GitHub</a>
+            </div>
+
+            <div>
+                <h1>Name: Student Management System</h1>
+                <p><b>Description:</b> This project is a web-based application built using Django, designed to manage student data. It allows users to perform CRUD operations (Create, Read, Update, Delete) on student records.</p>
+                <a href="https://github.com/Pavankumar-gadham/Student-management-system" target="_blank">GitHub</a>
+            </div>
+
+            <div>
+                <h1>Name: Login Form</h1>
+                <p><b>Description:</b> This is a simple and user-friendly login form designed using HTML, CSS, and JavaScript. The form allows users to enter their credentials to access a protected area of a website or application.</p>
+                <a href="https://github.com/Pavankumar-gadham/Login-Registration-Form" target="_blank">GitHub</a>
+            </div>
+
+            <div>
+                <h1>Name: Image Search</h1>
+                <p><b>Description:</b> This project is a web-based image search application built using HTML, CSS, and JavaScript. It allows users to search for images based on keywords and view the search results dynamically.</p>
+                <a href="https://github.com/Pavankumar-gadham/Image-Search" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div>
+            <form method="post">
+                {% csrf_token %}
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <input type="tel" name="number" id="number" placeholder="Enter your phone number" required>
+                </div>
+                <div>
+                    <textarea name="content" id="textarea" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer id="footer">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <ul>
+            <a href="https://www.linkedin.com/in/pavan-gadham" target="_blank">
+                <li>LinkedIn</li>
+            </a>
+            <a href="https://github.com/Pavankumar-gadham" target="_blank">
+                <li>GitHub</li>
+            </a>
+            <a href="https://www.instagram.com/_pavan_98_/" target="_blank">
+                <li>Instagram</li>
+            </a>
+        </ul>
+
+       
+
+        <p>&copy; All rights reserved - <span>Pavan Kumar Gadham</span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,409 @@
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f66767; /* Keep the black background */
+    color: #333;
+}
+
+/* Apply consistent background to sections */
+#home, #about, #skills, #projects, #contact {
+    background-color: #f66767; /* Match your section background */
+}
+
+
+
+/* Navbar Styles */
+/* Navbar Styles */
+nav {
+    background-color: #141414;
+    color: #fff;
+    padding: 1rem;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between the left and right sections */
+    align-items: center; /* Align items vertically in the center */
+    height: 20px; /* Decrease the height of the navbar */
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjust the font size of Portfolio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 0.8rem; /* Adjust the spacing between nav items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+    font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 4px;
+}
+
+
+
+
+/* Home Section Styles */
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background: #f66767;
+    margin-bottom: 2rem;
+}
+
+#home div {
+    flex: 1;
+}
+
+#home div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 30pc;
+}
+
+button {
+    background-color: #111010;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #565656;
+}
+
+#home h1 {
+    
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#home h4 {
+    
+    color: rgb(255, 255, 255);
+    margin-bottom: -30px;
+    margin-top: -15px;
+}
+
+#home h3 {
+    
+    color: rgb(255, 255, 255);
+    margin-top: -45px;
+    
+}
+
+/* About Section Styles */
+/* Basic Reset */
+
+#about {
+    padding: 20px;
+    background-color: #f66767; /* Adjust background color as needed */
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a0a0a; /* Adjust color as needed */
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about div {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the image and text */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about img {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    border-radius: 10pc; /* Optional: Adds rounded corners */
+    margin-top: -2pc;
+}
+
+#about h1 {
+    font-size: 1.2em;
+    color: #080808; /* Adjust color as needed */
+    margin-bottom: 10px;
+    
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #111111; /* Adjust color as needed */
+    line-height: 1.6; /* Adjust line spacing for readability */
+    text-align: justify;
+    margin-top: -2pc;
+    
+}
+
+
+
+#about a:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+
+/* Skills Section Styles */
+/* Style for the entire section */
+#skills {
+    padding: 20px;
+    background-color: #f66767;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Style for the main heading */
+#skills h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Container for skills and image */
+.skills-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row; /* Ensure items are laid out in a row */
+}
+
+/* Style for the image container */
+.skills-image {
+    order: 2; /* Place the image on the right */
+    flex: 1;
+}
+
+/* Style for the image */
+.skills-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 150px;
+}
+
+/* Style for the list of skills */
+.skills-list {
+    order: 1; /* Place the skills list on the left */
+    flex: 2; /* Allow more space for the skills list */
+}
+
+/* Style for each skill */
+.skill {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for skill names and icons */
+.skill p {
+    font-size: 1em;
+    color: #000000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+/* Icon style */
+.skill i {
+    font-size: 1.2em;
+    color: #000000; /* Color of the icons */
+}
+
+/* Container for progress bars */
+.bar-container {
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 10px;
+    width: 80%;
+    margin-top: 4px;
+    margin-left: 10px;
+    
+}
+
+/* Style for the progress bar */
+.bar {
+    background-color: #000000;
+    height: 100%;
+    width: 0; /* Width is set inline for each skill */
+    transition: width 0.5s ease-in-out;
+    
+}
+
+/* Style for the percentage text */
+.percentage {
+    font-size: 0.9em;
+    color: #333;
+    padding-left: 15px;
+}
+
+
+/* Projects Section Styles */
+#projects {
+    padding: 2rem;
+    background: #f66767;
+    margin-bottom: 2rem;
+}
+
+#projects h1 {
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#projects div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projects div div {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+#projects div div h1 {
+    margin-bottom: -1rem;
+    margin-top: 0;
+    font-size: 1rem;
+    
+}
+
+ #projects .hard{
+    padding-bottom: 15px;
+   
+    
+
+}
+
+#projects div div a {
+    background-color: #161616;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+    height: 25px;
+}
+
+#projects div div a:hover {
+    background: #121111;
+}
+
+
+
+/* Contact Section Styles */
+#contact {
+    padding: 2rem;
+    background: #f66767;
+    margin-bottom: 2rem;
+}
+
+#contact h1 {
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form div {
+    margin-bottom: 1rem;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #131212;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #00afac;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #f66767;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #fff;
+}
